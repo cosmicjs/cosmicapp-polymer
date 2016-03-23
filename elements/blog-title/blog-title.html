@@ -1,0 +1,33 @@
+<link rel="import" href="/libs/polymer/polymer.html">
+<dom-module id="blog-title">
+  <template>
+    <style>
+      :host {
+        display: block;
+        box-sizing: border-box;
+      }
+
+      :host h2 {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <iron-ajax
+    auto
+    url="https://api.cosmicjs.com/v1/polymer-tutorial"
+    handle-as="json"
+    last-response="{{res}}">
+    </iron-ajax>
+
+    <h2>
+      {{res.bucket.title}}
+    </h2>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'blog-title'
+    });
+  </script>
+</dom-module>

@@ -1,0 +1,46 @@
+<link rel="import" href="/libs/polymer/polymer.html">
+<link rel="import" href="/elements/post-preview/post-preview.html">
+
+<dom-module id="post-list">
+  <template>
+    <style>
+      :host {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      :host post-preview {
+        box-shadow: 1px 1px 2px 1px rgba(0,0,0,.5);
+      }
+      :host post-preview + post-preview {
+        margin-top: 10rem;
+      }
+    </style>
+
+    <iron-ajax
+    auto
+    url="https://api.cosmicjs.com/v1/polymer-tutorial/object-type/posts"
+    handle-as="json"
+    last-response="{{posts}}">
+    </iron-ajax>
+
+
+<template is="dom-repeat" items="{{posts.objects}}">
+  <post-preview post="{{item}}"></post-preview>
+</template>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'post-list',
+      properties: {
+        posts: {
+          type: Object
+        }
+      },
+      attached: function() {
+
+      }
+    });
+  </script>
+</dom-module>

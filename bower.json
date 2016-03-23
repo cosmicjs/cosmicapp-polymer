@@ -1,0 +1,23 @@
+{
+  "name": "polymer-cosmicjs-tutorial",
+  "homepage": "https://github.com/Mandrewdarts/Tutorials",
+  "authors": [
+    "Andrew Darts <mandrewdarts@gmail.com>"
+  ],
+  "description": "Polymer & CosmicJS Blog Homepage",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "milligram": "^1.1.0",
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-ajax": "Polymerelements/iron-ajax#^1.2.0"
+  }
+}

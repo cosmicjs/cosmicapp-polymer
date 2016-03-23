@@ -1,0 +1,92 @@
+<link rel="import" href="/libs/polymer/polymer.html">
+
+<dom-module id="post-preview">
+  <template>
+    <style>
+      :host {
+        display: block;
+        box-sizing: border-box;
+        background-color: #efefef;
+      }
+      :host h4 {
+        padding: 2rem;
+        margin: 0;
+        text-align: left;
+      }
+      :host .excerpt {
+        background-color: #606c76;
+        color: #eee;
+        padding: 2rem;
+      }
+
+      :host .excerpt button {
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,.5);
+      }
+
+      :host .read-more-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255,255,255,.95);
+      }
+      :host .read-more-container .content {
+        padding: 2rem;
+        margin-top: 20vh;
+        width: 70%;
+      }
+      :host .read-more-container h4 {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0;
+      }
+
+       :host .read-more-container.show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+        <h4>{{post.title}}</h4>
+        <template is="dom-repeat" items="{{post.metafields}}" filter="excerpt">
+          <div class="excerpt">
+            <p>{{item.value}}</p>
+            <button on-tap="readMore" class="float-right">Read More</button>
+          </div>
+        </template>
+      <div class="read-more-container">
+      <div class="content">
+        <h4>{{post.title}}</h4>
+        <article>
+          <p>{{post.content}}</p>
+        </article>
+        <button on-tap="readMore">Back</button>
+      </div>
+      </div>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'post-preview',
+      properties: {
+        post: {
+          type: Object
+        }
+      },
+      excerpt: function(item) {
+        return item.key == 'excerpt'
+      },
+      readMore: function() {
+        this.$$('.read-more-container').classList.toggle('show')
+      },
+      attached: function() {
+
+      }
+    });
+  </script>
+</dom-module>
