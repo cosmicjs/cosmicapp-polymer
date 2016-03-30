@@ -6,4 +6,16 @@ CosmicJS is in private beta at the moment. Go [here](https://cosmicjs.com/signup
 
 CosmicJS is "A Better Way to Manage Content".
 
-In Progress
+![Blog Picture](https://s3-us-west-2.amazonaws.com/mandrewdarts-repos/polymer-cosmicjs.png)
+
+## Run
+```shell
+npm install
+
+npm start
+```
+
+If you have problems try running
+```
+bower install
+```
