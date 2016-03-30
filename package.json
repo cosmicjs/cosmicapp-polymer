@@ -1,0 +1,24 @@
+{
+  "name": "polymer-cosmicjs",
+  "version": "1.0.0",
+  "description": "Creating blog homepage using [Polymer](https://www.polymer-project.org/1.0/) & [CosmicJS](https://cosmicjs.com/).",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandrewdarts/polymer-cosmicjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mandrewdarts/polymer-cosmicjs/issues"
+  },
+  "homepage": "https://github.com/Mandrewdarts/polymer-cosmicjs#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
