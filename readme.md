@@ -12,7 +12,7 @@ CosmicJS is "A Better Way to Manage Content".
 ```shell
 npm install
 
-npm start
+COSMIC_BUCKET=your-bucket-slug npm start
 ```
 
 If you have problems try running
