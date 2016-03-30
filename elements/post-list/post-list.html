@@ -19,7 +19,7 @@
 
     <iron-ajax
     auto
-    url="https://api.cosmicjs.com/v1/polymer-cosmicjs-tutorial/object-type/posts"
+    url=[[getBucket(bucket,objectType)]]
     handle-as="json"
     last-response="{{posts}}">
     </iron-ajax>
@@ -34,12 +34,20 @@
     Polymer({
       is: 'post-list',
       properties: {
+        bucket: {
+          type: String,
+          value: 'polymer-cosmicjs-tutorial'
+        },
+        objectType: {
+          type: String,
+          value: 'posts'
+        },
         posts: {
           type: Object
         }
       },
-      attached: function() {
-
+      getBucket: function(bucket, objectType) {
+        return "https://api.cosmicjs.com/v1/"+bucket+"/object-type/"+objectType
       }
     });
   </script>

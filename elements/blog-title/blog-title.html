@@ -15,7 +15,7 @@
 
     <iron-ajax
     auto
-    url="https://api.cosmicjs.com/v1/polymer-cosmicjs-tutorial"
+    url=[[getBucket(bucket)]]
     handle-as="json"
     last-response="{{res}}">
     </iron-ajax>
@@ -27,7 +27,16 @@
 
   <script>
     Polymer({
-      is: 'blog-title'
+      is: 'blog-title',
+      properties: {
+        bucket: {
+          type: String,
+          value: 'polymer-cosmicjs-tutorial'
+        },
+      },
+      getBucket: function(bucket) {
+        return "https://api.cosmicjs.com/v1/"+bucket
+      }
     });
   </script>
 </dom-module>

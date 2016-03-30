@@ -1,0 +1,95 @@
+{
+  "bucket": {
+    "_id": "56f2b930b3c813ae11000108",
+    "slug": "polymer-cosmicjs-tutorial",
+    "title": "polymer-cosmicjs-tutorial",
+    "object_types": [
+      {
+        "title": "Posts",
+        "slug": "posts",
+        "singular": "Post",
+        "help_text": null,
+        "metafields": [],
+        "options": {
+          "slug_field": 1,
+          "content_editor": 1,
+          "add_metafields": 1,
+          "metafields_title": 1,
+          "metafields_key": 1
+        }
+      }
+    ],
+    "objects": [
+      {
+        "_id": "56f2d827b3c813ae1100012e",
+        "order": 0,
+        "slug": "this-is-my-second-post",
+        "title": "This is my second post",
+        "content": "Axe pop-up cred celiac mi mumblecore sold taxidermy roof retro mixtape. Banh vhs party waistcoat portland paleo polaroid occupy normcore flannel humblebrag; irony. Street green chips chic vinegar lo-fi whatever cleanse offal ugh wayfarers sriracha chartreuse marfa banh art put fund ennui fap crayyolo squid denim gastropub small. Roof chillwave brunch keffiyeh literally banjo fap tradepug chartreuse gentrify cliche green asymmetrical vinyl kombucha bottle locavore blog. Heirloom axe hoodie vinyl vice moon axe shabby poutine put neutra! Asymmetrical lumbersexual dreamcatcher scenester pickled chambray gastropub bag freegan cliche brooklyn actually salvia next moonbeard tote gastropub tilde pork cliche bushwick blue. Loko shorts slow-carb party jean forage mi cronut beard tilde mlkshk truffaut street gastropub. Loko shorts slow-carb party jean forage mi cronut beard tilde mlkshk truffaut street gastropub. Asymmetrical lumbersexual dreamcatcher scenester pickled chambray gastropub bag freegan cliche brooklyn actually salvia next moonbeard tote gastropub tilde pork cliche bushwick blue.",
+        "metafields": [
+          {
+            "edit": 1,
+            "value": "Axe pop-up cred celiac mi mumblecore sold taxidermy roof retro mixtape. Banh vhs party waistcoat portland paleo polaroid occupy normcore flannel humblebrag; irony. Street green chips chic vinegar lo-fi whatever cleanse offal ugh wayfarers sriracha chartreuse marfa banh art put fund",
+            "key": "excerpt",
+            "title": "Excerpt",
+            "type": "textarea",
+            "children": false
+          }
+        ],
+        "bucket": "56f2b930b3c813ae11000108",
+        "type_slug": "posts",
+        "created": "2016-03-23T17:53:43.861Z",
+        "user_id": "561136e6c6fe7fd677000048",
+        "options": {
+          "slug_field": 1,
+          "content_editor": 1,
+          "add_metafields": 1,
+          "metafields_title": 1,
+          "metafields_key": 1
+        },
+        "status": "published",
+        "modified": "2016-03-23T17:54:10.641Z"
+      },
+      {
+        "_id": "56f2be2cb3c813ae1100012b",
+        "order": 1,
+        "slug": "this-is-my-first-post",
+        "title": "This is  my first post",
+        "content": "Green asymmetrical denim deep crayyolo tote out celiac moonbeard thundercats jean quinoa xoxo disrupt chic occupy hella fap coffee helvetica 3 wolf small typewriter moonbeard. Green asymmetrical denim deep crayyolo tote out celiac moonbeard thundercats jean quinoa xoxo disrupt chic occupy hella fap coffee helvetica 3 wolf small typewriter moonbeard. Asymmetrical lumbersexual dreamcatcher scenester pickled chambray gastropub bag freegan cliche brooklyn actually salvia next moonbeard tote gastropub tilde pork cliche bushwick blue. Chia vinegar mi skateboard beertrust church-key chartreuse tacos 8-bit literally vinyl miirony party park selfies tilde! Asymmetrical lumbersexual dreamcatcher scenester pickled chambray gastropub bag freegan cliche brooklyn actually salvia next moonbeard tote gastropub tilde pork cliche bushwick blue. Umami coffee banjo art iphone kogi scenester carry chia swag rights vinegar sriracha mlkshk; lo-fi single-origin lo-fi.",
+        "metafields": [
+          {
+            "edit": 1,
+            "value": "js, random, posts",
+            "key": "tags",
+            "title": "Tags",
+            "type": "text",
+            "children": false
+          },
+          {
+            "edit": 1,
+            "value": "Green asymmetrical denim deep crayyolo tote out celiac moonbeard thundercats jean quinoa xoxo disrupt chic occupy.",
+            "key": "excerpt",
+            "title": "Excerpt",
+            "type": "textarea",
+            "children": false
+          }
+        ],
+        "bucket": "56f2b930b3c813ae11000108",
+        "type_slug": "posts",
+        "created": "2016-03-23T16:02:52.274Z",
+        "user_id": "561136e6c6fe7fd677000048",
+        "options": {
+          "slug_field": 1,
+          "content_editor": 1,
+          "add_metafields": 1,
+          "metafields_title": 1,
+          "metafields_key": 1
+        },
+        "status": "published",
+        "modified": "2016-03-23T17:28:58.470Z"
+      }
+    ],
+    "media": [],
+    "plugins": []
+  }
+}

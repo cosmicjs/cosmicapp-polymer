@@ -19,3 +19,14 @@ If you have problems try running
 ```
 bower install
 ```
+
+## Configure
+
+The `blog-title` and `post-list` elements are able to receive your CosmicJS bucket name as a property. The `post-list` element takes an additional property named `object-type` which is the object in your bucket you want to iterate over.
+
+Notice: **I have an extra metafield with a key of "excerpt" added to my posts object.**
+
+```html
+<blog-title bucket="<your-bucket-name>"></blog-title>
+<post-list bucket="<your-bucket-name>" object-type="<your-object-type>"></post-list>
+```
