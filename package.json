@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Mandrewdarts/polymer-cosmicjs#readme",
   "dependencies": {
+    "bower": "^1.7.7",
     "express": "^4.13.4"
   },
   "engines": {
